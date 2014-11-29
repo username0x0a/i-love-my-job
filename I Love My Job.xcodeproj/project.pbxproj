@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF7482A41A294E310061C49F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A21A294E310061C49F /* Default-568h@2x.png */; };
+		EF7482A51A294E310061C49F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A31A294E310061C49F /* Default@2x.png */; };
+		EF7482A81A2952670061C49F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A71A2952670061C49F /* Icon@2x.png */; };
+		EF7482AC1A295AB90061C49F /* Ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7482AA1A295AB90061C49F /* Ogg.framework */; };
+		EF7482AD1A295AB90061C49F /* Vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7482AB1A295AB90061C49F /* Vorbis.framework */; };
+		EF7482AF1A295AE00061C49F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF7482AE1A295AE00061C49F /* AudioToolbox.framework */; };
+		EF7482D01A295B2E0061C49F /* abych_mohl_toto.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B11A295B2E0061C49F /* abych_mohl_toto.ogg */; };
+		EF7482D11A295B2E0061C49F /* ani_ocko_nenasadis.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B21A295B2E0061C49F /* ani_ocko_nenasadis.ogg */; };
+		EF7482D21A295B2E0061C49F /* ani_za_kokot_vole.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B31A295B2E0061C49F /* ani_za_kokot_vole.ogg */; };
+		EF7482D31A295B2E0061C49F /* banalni_vec.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B41A295B2E0061C49F /* banalni_vec.ogg */; };
+		EF7482D41A295B2E0061C49F /* do_pice.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B51A295B2E0061C49F /* do_pice.ogg */; };
+		EF7482D51A295B2E0061C49F /* hajzli_jedni.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B61A295B2E0061C49F /* hajzli_jedni.ogg */; };
+		EF7482D61A295B2E0061C49F /* hosi_to_je_neuveritelne.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B71A295B2E0061C49F /* hosi_to_je_neuveritelne.ogg */; };
+		EF7482D71A295B2E0061C49F /* ja_se_z_toho_musim_pojebat.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B81A295B2E0061C49F /* ja_se_z_toho_musim_pojebat.ogg */; };
+		EF7482D81A295B2E0061C49F /* ja_to_mrdam.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482B91A295B2E0061C49F /* ja_to_mrdam.ogg */; };
+		EF7482D91A295B2E0061C49F /* ja_to_nejdu_delat.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482BA1A295B2E0061C49F /* ja_to_nejdu_delat.ogg */; };
+		EF7482DA1A295B2E0061C49F /* jedinou_picovinku.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482BB1A295B2E0061C49F /* jedinou_picovinku.ogg */; };
+		EF7482DB1A295B2E0061C49F /* jedu_do_pici_stadyma.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482BC1A295B2E0061C49F /* jedu_do_pici_stadyma.ogg */; };
+		EF7482DC1A295B2E0061C49F /* kurva.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482BD1A295B2E0061C49F /* kurva.ogg */; };
+		EF7482DD1A295B2E0061C49F /* kurva_do_pice_to_neni_mozne.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482BE1A295B2E0061C49F /* kurva_do_pice_to_neni_mozne.ogg */; };
+		EF7482DE1A295B2E0061C49F /* kurva_uz.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482BF1A295B2E0061C49F /* kurva_uz.ogg */; };
+		EF7482DF1A295B2E0061C49F /* ne_nenasadis_ho.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C01A295B2E0061C49F /* ne_nenasadis_ho.ogg */; };
+		EF7482E01A295B2E0061C49F /* nebudu_to_delat.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C11A295B2E0061C49F /* nebudu_to_delat.ogg */; };
+		EF7482E11A295B2E0061C49F /* nejvetsi_blbec_na_zemekouli.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C21A295B2E0061C49F /* nejvetsi_blbec_na_zemekouli.ogg */; };
+		EF7482E21A295B2E0061C49F /* nenasadim.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C31A295B2E0061C49F /* nenasadim.ogg */; };
+		EF7482E31A295B2E0061C49F /* neresitelny_problem_hosi.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C41A295B2E0061C49F /* neresitelny_problem_hosi.ogg */; };
+		EF7482E41A295B2E0061C49F /* nevim_jak.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C51A295B2E0061C49F /* nevim_jak.ogg */; };
+		EF7482E61A295B2E0061C49F /* okamzite_zabit_ty_kurvy.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C71A295B2E0061C49F /* okamzite_zabit_ty_kurvy.ogg */; };
+		EF7482E71A295B2E0061C49F /* past_vedle_pasti_pico.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C81A295B2E0061C49F /* past_vedle_pasti_pico.ogg */; };
+		EF7482E81A295B2E0061C49F /* pockej_kamo.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482C91A295B2E0061C49F /* pockej_kamo.ogg */; };
+		EF7482E91A295B2E0061C49F /* tady_musis_vsechno_rozdelat.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482CA1A295B2E0061C49F /* tady_musis_vsechno_rozdelat.ogg */; };
+		EF7482EA1A295B2E0061C49F /* to_je_pico_nemozne.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482CB1A295B2E0061C49F /* to_je_pico_nemozne.ogg */; };
+		EF7482EB1A295B2E0061C49F /* to_neni_normalni_kurva.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482CC1A295B2E0061C49F /* to_neni_normalni_kurva.ogg */; };
+		EF7482EC1A295B2E0061C49F /* to_sou_nervy_ty_pico.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482CD1A295B2E0061C49F /* to_sou_nervy_ty_pico.ogg */; };
+		EF7482ED1A295B2E0061C49F /* tuto_picu_potrebuju_utahnout.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482CE1A295B2E0061C49F /* tuto_picu_potrebuju_utahnout.ogg */; };
+		EF7482EE1A295B2E0061C49F /* zasrane_zamrdane.ogg in Resources */ = {isa = PBXBuildFile; fileRef = EF7482CF1A295B2E0061C49F /* zasrane_zamrdane.ogg */; };
+		EF7482FD1A2965C30061C49F /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482FC1A2965C30061C49F /* title@2x.png */; };
+		EF7483061A29C9420061C49F /* IDZAQAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7483001A29C9420061C49F /* IDZAQAudioPlayer.m */; };
+		EF7483071A29C9420061C49F /* IDZOggVorbisFileDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF7483041A29C9420061C49F /* IDZOggVorbisFileDecoder.mm */; };
+		EFC0C13A1A29DD210080BA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1371A29DD210080BA0E /* AppDelegate.m */; };
+		EFC0C13B1A29DD210080BA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1391A29DD210080BA0E /* ViewController.m */; };
+		EFC0C1431A29DD5D0080BA0E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFC0C1411A29DD5D0080BA0E /* Info.plist */; };
+		EFC0C1441A29DD5D0080BA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1421A29DD5D0080BA0E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF7482A21A294E310061C49F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EF7482A31A294E310061C49F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		EF7482A71A2952670061C49F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		EF7482AA1A295AB90061C49F /* Ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ogg.framework; sourceTree = "<group>"; };
+		EF7482AB1A295AB90061C49F /* Vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Vorbis.framework; sourceTree = "<group>"; };
+		EF7482AE1A295AE00061C49F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EF7482B11A295B2E0061C49F /* abych_mohl_toto.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = abych_mohl_toto.ogg; sourceTree = "<group>"; };
+		EF7482B21A295B2E0061C49F /* ani_ocko_nenasadis.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ani_ocko_nenasadis.ogg; sourceTree = "<group>"; };
+		EF7482B31A295B2E0061C49F /* ani_za_kokot_vole.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ani_za_kokot_vole.ogg; sourceTree = "<group>"; };
+		EF7482B41A295B2E0061C49F /* banalni_vec.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = banalni_vec.ogg; sourceTree = "<group>"; };
+		EF7482B51A295B2E0061C49F /* do_pice.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = do_pice.ogg; sourceTree = "<group>"; };
+		EF7482B61A295B2E0061C49F /* hajzli_jedni.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = hajzli_jedni.ogg; sourceTree = "<group>"; };
+		EF7482B71A295B2E0061C49F /* hosi_to_je_neuveritelne.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = hosi_to_je_neuveritelne.ogg; sourceTree = "<group>"; };
+		EF7482B81A295B2E0061C49F /* ja_se_z_toho_musim_pojebat.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ja_se_z_toho_musim_pojebat.ogg; sourceTree = "<group>"; };
+		EF7482B91A295B2E0061C49F /* ja_to_mrdam.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ja_to_mrdam.ogg; sourceTree = "<group>"; };
+		EF7482BA1A295B2E0061C49F /* ja_to_nejdu_delat.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ja_to_nejdu_delat.ogg; sourceTree = "<group>"; };
+		EF7482BB1A295B2E0061C49F /* jedinou_picovinku.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = jedinou_picovinku.ogg; sourceTree = "<group>"; };
+		EF7482BC1A295B2E0061C49F /* jedu_do_pici_stadyma.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = jedu_do_pici_stadyma.ogg; sourceTree = "<group>"; };
+		EF7482BD1A295B2E0061C49F /* kurva.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = kurva.ogg; sourceTree = "<group>"; };
+		EF7482BE1A295B2E0061C49F /* kurva_do_pice_to_neni_mozne.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = kurva_do_pice_to_neni_mozne.ogg; sourceTree = "<group>"; };
+		EF7482BF1A295B2E0061C49F /* kurva_uz.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = kurva_uz.ogg; sourceTree = "<group>"; };
+		EF7482C01A295B2E0061C49F /* ne_nenasadis_ho.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = ne_nenasadis_ho.ogg; sourceTree = "<group>"; };
+		EF7482C11A295B2E0061C49F /* nebudu_to_delat.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nebudu_to_delat.ogg; sourceTree = "<group>"; };
+		EF7482C21A295B2E0061C49F /* nejvetsi_blbec_na_zemekouli.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nejvetsi_blbec_na_zemekouli.ogg; sourceTree = "<group>"; };
+		EF7482C31A295B2E0061C49F /* nenasadim.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nenasadim.ogg; sourceTree = "<group>"; };
+		EF7482C41A295B2E0061C49F /* neresitelny_problem_hosi.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = neresitelny_problem_hosi.ogg; sourceTree = "<group>"; };
+		EF7482C51A295B2E0061C49F /* nevim_jak.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nevim_jak.ogg; sourceTree = "<group>"; };
+		EF7482C71A295B2E0061C49F /* okamzite_zabit_ty_kurvy.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = okamzite_zabit_ty_kurvy.ogg; sourceTree = "<group>"; };
+		EF7482C81A295B2E0061C49F /* past_vedle_pasti_pico.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = past_vedle_pasti_pico.ogg; sourceTree = "<group>"; };
+		EF7482C91A295B2E0061C49F /* pockej_kamo.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = pockej_kamo.ogg; sourceTree = "<group>"; };
+		EF7482CA1A295B2E0061C49F /* tady_musis_vsechno_rozdelat.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = tady_musis_vsechno_rozdelat.ogg; sourceTree = "<group>"; };
+		EF7482CB1A295B2E0061C49F /* to_je_pico_nemozne.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = to_je_pico_nemozne.ogg; sourceTree = "<group>"; };
+		EF7482CC1A295B2E0061C49F /* to_neni_normalni_kurva.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = to_neni_normalni_kurva.ogg; sourceTree = "<group>"; };
+		EF7482CD1A295B2E0061C49F /* to_sou_nervy_ty_pico.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = to_sou_nervy_ty_pico.ogg; sourceTree = "<group>"; };
+		EF7482CE1A295B2E0061C49F /* tuto_picu_potrebuju_utahnout.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = tuto_picu_potrebuju_utahnout.ogg; sourceTree = "<group>"; };
+		EF7482CF1A295B2E0061C49F /* zasrane_zamrdane.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = zasrane_zamrdane.ogg; sourceTree = "<group>"; };
+		EF7482FC1A2965C30061C49F /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title@2x.png"; sourceTree = "<group>"; };
+		EF7482FF1A29C9420061C49F /* IDZAQAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZAQAudioPlayer.h; sourceTree = "<group>"; };
+		EF7483001A29C9420061C49F /* IDZAQAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDZAQAudioPlayer.m; sourceTree = "<group>"; };
+		EF7483011A29C9420061C49F /* IDZAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZAudioDecoder.h; sourceTree = "<group>"; };
+		EF7483021A29C9420061C49F /* IDZAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZAudioPlayer.h; sourceTree = "<group>"; };
+		EF7483031A29C9420061C49F /* IDZOggVorbisFileDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZOggVorbisFileDecoder.h; sourceTree = "<group>"; };
+		EF7483041A29C9420061C49F /* IDZOggVorbisFileDecoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IDZOggVorbisFileDecoder.mm; sourceTree = "<group>"; };
+		EF7483051A29C9420061C49F /* IDZTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDZTrace.h; sourceTree = "<group>"; };
+		EFAC0AEA1A29098F00AEA729 /* I Love My Job.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Love My Job.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC0C1361A29DD210080BA0E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EFC0C1371A29DD210080BA0E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFC0C1381A29DD210080BA0E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EFC0C1391A29DD210080BA0E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EFC0C1411A29DD5D0080BA0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "I Love My Job/Info.plist"; sourceTree = SOURCE_ROOT; };
+		EFC0C1421A29DD5D0080BA0E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "I Love My Job/main.m"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFAC0AE71A29098F00AEA729 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7482AF1A295AE00061C49F /* AudioToolbox.framework in Frameworks */,
+				EF7482AC1A295AB90061C49F /* Ogg.framework in Frameworks */,
+				EF7482AD1A295AB90061C49F /* Vorbis.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF7482A01A294E310061C49F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF7482A61A2952670061C49F /* Icons */,
+				EF7482A11A294E310061C49F /* Images */,
+				EF7482B01A295B2E0061C49F /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF7482A11A294E310061C49F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EF7482A21A294E310061C49F /* Default-568h@2x.png */,
+				EF7482A31A294E310061C49F /* Default@2x.png */,
+				EF7482FC1A2965C30061C49F /* title@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EF7482A61A2952670061C49F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				EF7482A71A2952670061C49F /* Icon@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		EF7482A91A295AB90061C49F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF7482FE1A29C9420061C49F /* AudioPlayer */,
+				EF7482AE1A295AE00061C49F /* AudioToolbox.framework */,
+				EF7482AA1A295AB90061C49F /* Ogg.framework */,
+				EF7482AB1A295AB90061C49F /* Vorbis.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF7482B01A295B2E0061C49F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EF7482B11A295B2E0061C49F /* abych_mohl_toto.ogg */,
+				EF7482B21A295B2E0061C49F /* ani_ocko_nenasadis.ogg */,
+				EF7482B31A295B2E0061C49F /* ani_za_kokot_vole.ogg */,
+				EF7482B41A295B2E0061C49F /* banalni_vec.ogg */,
+				EF7482B51A295B2E0061C49F /* do_pice.ogg */,
+				EF7482B61A295B2E0061C49F /* hajzli_jedni.ogg */,
+				EF7482B71A295B2E0061C49F /* hosi_to_je_neuveritelne.ogg */,
+				EF7482B81A295B2E0061C49F /* ja_se_z_toho_musim_pojebat.ogg */,
+				EF7482B91A295B2E0061C49F /* ja_to_mrdam.ogg */,
+				EF7482BA1A295B2E0061C49F /* ja_to_nejdu_delat.ogg */,
+				EF7482BB1A295B2E0061C49F /* jedinou_picovinku.ogg */,
+				EF7482BC1A295B2E0061C49F /* jedu_do_pici_stadyma.ogg */,
+				EF7482BD1A295B2E0061C49F /* kurva.ogg */,
+				EF7482BE1A295B2E0061C49F /* kurva_do_pice_to_neni_mozne.ogg */,
+				EF7482BF1A295B2E0061C49F /* kurva_uz.ogg */,
+				EF7482C01A295B2E0061C49F /* ne_nenasadis_ho.ogg */,
+				EF7482C11A295B2E0061C49F /* nebudu_to_delat.ogg */,
+				EF7482C21A295B2E0061C49F /* nejvetsi_blbec_na_zemekouli.ogg */,
+				EF7482C31A295B2E0061C49F /* nenasadim.ogg */,
+				EF7482C41A295B2E0061C49F /* neresitelny_problem_hosi.ogg */,
+				EF7482C51A295B2E0061C49F /* nevim_jak.ogg */,
+				EF7482C71A295B2E0061C49F /* okamzite_zabit_ty_kurvy.ogg */,
+				EF7482C81A295B2E0061C49F /* past_vedle_pasti_pico.ogg */,
+				EF7482C91A295B2E0061C49F /* pockej_kamo.ogg */,
+				EF7482CA1A295B2E0061C49F /* tady_musis_vsechno_rozdelat.ogg */,
+				EF7482CB1A295B2E0061C49F /* to_je_pico_nemozne.ogg */,
+				EF7482CC1A295B2E0061C49F /* to_neni_normalni_kurva.ogg */,
+				EF7482CD1A295B2E0061C49F /* to_sou_nervy_ty_pico.ogg */,
+				EF7482CE1A295B2E0061C49F /* tuto_picu_potrebuju_utahnout.ogg */,
+				EF7482CF1A295B2E0061C49F /* zasrane_zamrdane.ogg */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EF7482FE1A29C9420061C49F /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EF7482FF1A29C9420061C49F /* IDZAQAudioPlayer.h */,
+				EF7483001A29C9420061C49F /* IDZAQAudioPlayer.m */,
+				EF7483011A29C9420061C49F /* IDZAudioDecoder.h */,
+				EF7483021A29C9420061C49F /* IDZAudioPlayer.h */,
+				EF7483031A29C9420061C49F /* IDZOggVorbisFileDecoder.h */,
+				EF7483041A29C9420061C49F /* IDZOggVorbisFileDecoder.mm */,
+				EF7483051A29C9420061C49F /* IDZTrace.h */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		EFAC0AE11A29098F00AEA729 = {
+			isa = PBXGroup;
+			children = (
+				EFAC0AEC1A29098F00AEA729 /* I Love My Job */,
+				EFAC0AEB1A29098F00AEA729 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFAC0AEB1A29098F00AEA729 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC0AEA1A29098F00AEA729 /* I Love My Job.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFAC0AEC1A29098F00AEA729 /* I Love My Job */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1351A29DD210080BA0E /* Classes */,
+				EF7482A91A295AB90061C49F /* Frameworks */,
+				EF7482A01A294E310061C49F /* Resources */,
+				EFC0C13C1A29DD2D0080BA0E /* Supporting Files */,
+			);
+			path = "I Love My Job";
+			sourceTree = "<group>";
+		};
+		EFC0C1351A29DD210080BA0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1361A29DD210080BA0E /* AppDelegate.h */,
+				EFC0C1371A29DD210080BA0E /* AppDelegate.m */,
+				EFC0C1381A29DD210080BA0E /* ViewController.h */,
+				EFC0C1391A29DD210080BA0E /* ViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EFC0C13C1A29DD2D0080BA0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFC0C1411A29DD5D0080BA0E /* Info.plist */,
+				EFC0C1421A29DD5D0080BA0E /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFAC0AE91A29098F00AEA729 /* I Love My Job */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFAC0B0D1A29098F00AEA729 /* Build configuration list for PBXNativeTarget "I Love My Job" */;
+			buildPhases = (
+				EFAC0AE61A29098F00AEA729 /* Sources */,
+				EFAC0AE71A29098F00AEA729 /* Frameworks */,
+				EFAC0AE81A29098F00AEA729 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "I Love My Job";
+			productName = "I Love My Job";
+			productReference = EFAC0AEA1A29098F00AEA729 /* I Love My Job.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFAC0AE21A29098F00AEA729 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Michi;
+				TargetAttributes = {
+					EFAC0AE91A29098F00AEA729 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = EFAC0AE51A29098F00AEA729 /* Build configuration list for PBXProject "I Love My Job" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFAC0AE11A29098F00AEA729;
+			productRefGroup = EFAC0AEB1A29098F00AEA729 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFAC0AE91A29098F00AEA729 /* I Love My Job */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFAC0AE81A29098F00AEA729 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7482E71A295B2E0061C49F /* past_vedle_pasti_pico.ogg in Resources */,
+				EF7482E31A295B2E0061C49F /* neresitelny_problem_hosi.ogg in Resources */,
+				EF7482D31A295B2E0061C49F /* banalni_vec.ogg in Resources */,
+				EF7482E91A295B2E0061C49F /* tady_musis_vsechno_rozdelat.ogg in Resources */,
+				EF7482EB1A295B2E0061C49F /* to_neni_normalni_kurva.ogg in Resources */,
+				EF7482EC1A295B2E0061C49F /* to_sou_nervy_ty_pico.ogg in Resources */,
+				EF7482EE1A295B2E0061C49F /* zasrane_zamrdane.ogg in Resources */,
+				EF7482D71A295B2E0061C49F /* ja_se_z_toho_musim_pojebat.ogg in Resources */,
+				EF7482D51A295B2E0061C49F /* hajzli_jedni.ogg in Resources */,
+				EF7482D81A295B2E0061C49F /* ja_to_mrdam.ogg in Resources */,
+				EF7482D61A295B2E0061C49F /* hosi_to_je_neuveritelne.ogg in Resources */,
+				EF7482EA1A295B2E0061C49F /* to_je_pico_nemozne.ogg in Resources */,
+				EF7482D41A295B2E0061C49F /* do_pice.ogg in Resources */,
+				EFC0C1431A29DD5D0080BA0E /* Info.plist in Resources */,
+				EF7482E81A295B2E0061C49F /* pockej_kamo.ogg in Resources */,
+				EF7482D91A295B2E0061C49F /* ja_to_nejdu_delat.ogg in Resources */,
+				EF7482D21A295B2E0061C49F /* ani_za_kokot_vole.ogg in Resources */,
+				EF7482DE1A295B2E0061C49F /* kurva_uz.ogg in Resources */,
+				EF7482DF1A295B2E0061C49F /* ne_nenasadis_ho.ogg in Resources */,
+				EF7482DB1A295B2E0061C49F /* jedu_do_pici_stadyma.ogg in Resources */,
+				EF7482ED1A295B2E0061C49F /* tuto_picu_potrebuju_utahnout.ogg in Resources */,
+				EF7482E41A295B2E0061C49F /* nevim_jak.ogg in Resources */,
+				EF7482D11A295B2E0061C49F /* ani_ocko_nenasadis.ogg in Resources */,
+				EF7482DA1A295B2E0061C49F /* jedinou_picovinku.ogg in Resources */,
+				EF7482DD1A295B2E0061C49F /* kurva_do_pice_to_neni_mozne.ogg in Resources */,
+				EF7482A51A294E310061C49F /* Default@2x.png in Resources */,
+				EF7482FD1A2965C30061C49F /* title@2x.png in Resources */,
+				EF7482D01A295B2E0061C49F /* abych_mohl_toto.ogg in Resources */,
+				EF7482E61A295B2E0061C49F /* okamzite_zabit_ty_kurvy.ogg in Resources */,
+				EF7482E21A295B2E0061C49F /* nenasadim.ogg in Resources */,
+				EF7482E01A295B2E0061C49F /* nebudu_to_delat.ogg in Resources */,
+				EF7482DC1A295B2E0061C49F /* kurva.ogg in Resources */,
+				EF7482A81A2952670061C49F /* Icon@2x.png in Resources */,
+				EF7482E11A295B2E0061C49F /* nejvetsi_blbec_na_zemekouli.ogg in Resources */,
+				EF7482A41A294E310061C49F /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFAC0AE61A29098F00AEA729 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC0C1441A29DD5D0080BA0E /* main.m in Sources */,
+				EFC0C13B1A29DD210080BA0E /* ViewController.m in Sources */,
+				EF7483071A29C9420061C49F /* IDZOggVorbisFileDecoder.mm in Sources */,
+				EFC0C13A1A29DD210080BA0E /* AppDelegate.m in Sources */,
+				EF7483061A29C9420061C49F /* IDZAQAudioPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFAC0B0B1A29098F00AEA729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EFAC0B0C1A29098F00AEA729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFAC0B0E1A29098F00AEA729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/I Love My Job/Frameworks\"",
+				);
+				INFOPLIST_FILE = "I Love My Job/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EFAC0B0F1A29098F00AEA729 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/I Love My Job/Frameworks\"",
+				);
+				INFOPLIST_FILE = "I Love My Job/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFAC0AE51A29098F00AEA729 /* Build configuration list for PBXProject "I Love My Job" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAC0B0B1A29098F00AEA729 /* Debug */,
+				EFAC0B0C1A29098F00AEA729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFAC0B0D1A29098F00AEA729 /* Build configuration list for PBXNativeTarget "I Love My Job" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAC0B0E1A29098F00AEA729 /* Debug */,
+				EFAC0B0F1A29098F00AEA729 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFAC0AE21A29098F00AEA729 /* Project object */;
+}
