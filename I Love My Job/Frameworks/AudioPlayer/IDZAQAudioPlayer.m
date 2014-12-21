@@ -110,7 +110,9 @@ static void IDZPropertyListener(void* inUserData,
     if(inID == kAudioQueueProperty_IsRunning)
     {
         UInt32 isRunning = [pPlayer queryIsRunning];
+#ifdef DEBUG
         NSLog(@"isRunning = %u", (unsigned int)isRunning);
+#endif
         BOOL bDidFinish = (pPlayer.playing && !isRunning);
         pPlayer.playing = isRunning ? YES : NO;
         if(bDidFinish)
@@ -323,6 +325,7 @@ static void IDZPropertyListener(void* inUserData,
 
 - (void)setState:(IDZAudioPlayerState)state
 {
+#ifdef DEBUG
     switch(state)
     {
         case IDZAudioPlayerStatePaused:
@@ -341,6 +344,7 @@ static void IDZPropertyListener(void* inUserData,
             NSLog(@"IDZAudioPlayerStateStopping");
             break;
     }
+#endif
     mState = state;
 }
 @end

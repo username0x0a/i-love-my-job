@@ -207,7 +207,9 @@ static NSDictionary *sounds = nil;
 	NSURL* oggUrl = [[NSBundle mainBundle] URLForResource:resourceName withExtension:@".ogg"];
 	NSAssert(oggUrl, @"URL is valid.");
 	IDZOggVorbisFileDecoder* decoder = [[IDZOggVorbisFileDecoder alloc] initWithContentsOfURL:oggUrl error:&error];
+#ifdef DEBUG
 	NSLog(@"Ogg Vorbis file duration is %g", decoder.duration);
+#endif
 	_player = [[IDZAQAudioPlayer alloc] initWithDecoder:decoder error:nil];
 	[_player prepareToPlay];
 	[_player play];

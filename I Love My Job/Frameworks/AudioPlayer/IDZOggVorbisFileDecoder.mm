@@ -122,7 +122,9 @@
      * See: http://xiph.org/vorbis/doc/vorbisfile/ov_time_seek.html
      */
     int iResult = ov_time_seek(&mOggVorbisFile, time);
+#ifdef DEBUG
     NSLog(@"ov_time_seek(%g) = %d", time, iResult);
+#endif
     return (iResult == 0);
 }
 

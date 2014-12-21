@@ -48,7 +48,6 @@
 		EF7483071A29C9420061C49F /* IDZOggVorbisFileDecoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = EF7483041A29C9420061C49F /* IDZOggVorbisFileDecoder.mm */; };
 		EFC0C13A1A29DD210080BA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1371A29DD210080BA0E /* AppDelegate.m */; };
 		EFC0C13B1A29DD210080BA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1391A29DD210080BA0E /* ViewController.m */; };
-		EFC0C1431A29DD5D0080BA0E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFC0C1411A29DD5D0080BA0E /* Info.plist */; };
 		EFC0C1441A29DD5D0080BA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1421A29DD5D0080BA0E /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -330,7 +329,6 @@
 				EF7482D61A295B2E0061C49F /* hosi_to_je_neuveritelne.ogg in Resources */,
 				EF7482EA1A295B2E0061C49F /* to_je_pico_nemozne.ogg in Resources */,
 				EF7482D41A295B2E0061C49F /* do_pice.ogg in Resources */,
-				EFC0C1431A29DD5D0080BA0E /* Info.plist in Resources */,
 				EF7482E81A295B2E0061C49F /* pockej_kamo.ogg in Resources */,
 				EF7482D91A295B2E0061C49F /* ja_to_nejdu_delat.ogg in Resources */,
 				EF7482D21A295B2E0061C49F /* ani_za_kokot_vole.ogg in Resources */,

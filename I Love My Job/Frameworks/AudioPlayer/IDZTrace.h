@@ -9,6 +9,10 @@
 #ifndef IDZAudioPlayerDevelopment_IDZTrace_h
 #define IDZAudioPlayerDevelopment_IDZTrace_h
 
+#ifdef DEBUG
 #define IDZTrace() NSLog(@"%s", __PRETTY_FUNCTION__)
+#else
+#define IDZTrace()
+#endif
 
 #endif
