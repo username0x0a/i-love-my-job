@@ -55,7 +55,7 @@
         NSString* path = [url path];
         mpFile = fopen([path UTF8String], "r");
         NSAssert(mpFile, @"fopen succeeded.");
-        int iReturn = ov_open_callbacks(mpFile, &mOggVorbisFile, NULL, 0, OV_CALLBACKS_NOCLOSE);
+        __unused int iReturn = ov_open_callbacks(mpFile, &mOggVorbisFile, NULL, 0, OV_CALLBACKS_NOCLOSE);
         NSAssert(iReturn >= 0, @"ov_open_callbacks succeeded.");
         vorbis_info* pInfo = ov_info(&mOggVorbisFile, -1);
         int bytesPerChannel = IDZ_OGG_VORBIS_WORDSIZE;

@@ -18,8 +18,11 @@ static NSDictionary *sounds = nil;
 
 
 @interface GridCell : UICollectionViewCell
+
 @property (nonatomic, strong) UILabel *title;
+
 @end
+
 
 @implementation GridCell
 
@@ -27,12 +30,12 @@ static NSDictionary *sounds = nil;
 {
 	if (self = [super initWithFrame:frame])
 	{
-		self.layer.cornerRadius = 3;
+		self.layer.cornerRadius = 5;
 		self.layer.borderWidth = 0.5;
 		self.layer.borderColor = [UIColor colorWithWhite:0.836 alpha:1.000].CGColor;
 		self.clipsToBounds = YES;
 		CGRect frame = self.contentView.bounds;
-		CGFloat margin = 4;
+		CGFloat margin = 6;
 		frame.origin.x += margin; frame.origin.y += margin;
 		frame.size.width -= 2*margin; frame.size.height -= 2*margin;
 		_title = [[UILabel alloc] initWithFrame:frame];
@@ -66,7 +69,7 @@ static NSDictionary *sounds = nil;
 #pragma mark - View controller
 
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
+@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IDZAQAudioPlayer *player;
@@ -173,6 +176,12 @@ static NSDictionary *sounds = nil;
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
 	return sounds.count;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+	CGFloat size = (self.view.frame.size.width - 4*8) / 3;
+	return CGSizeMake(size, size);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
