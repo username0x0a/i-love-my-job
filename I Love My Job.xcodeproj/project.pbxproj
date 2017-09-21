@@ -42,9 +42,9 @@
 		D615A8521F73FFE20091F746 /* pockej_kamo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D615A8341F73FFE20091F746 /* pockej_kamo.m4a */; };
 		D615A8561F74008C0091F746 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D615A8551F7400850091F746 /* AVFoundation.framework */; };
 		EF21A9201F731CFE00DE8197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF21A91F1F731CFE00DE8197 /* LaunchScreen.storyboard */; };
+		EF5EB59E1F74293500CCBDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5EB59D1F74293500CCBDBD /* Assets.xcassets */; };
 		EF7482A41A294E310061C49F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A21A294E310061C49F /* Default-568h@2x.png */; };
 		EF7482A51A294E310061C49F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A31A294E310061C49F /* Default@2x.png */; };
-		EF7482A81A2952670061C49F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A71A2952670061C49F /* Icon@2x.png */; };
 		EF7482FD1A2965C30061C49F /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482FC1A2965C30061C49F /* title@2x.png */; };
 		EFC0C13A1A29DD210080BA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1371A29DD210080BA0E /* AppDelegate.m */; };
 		EFC0C13B1A29DD210080BA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1391A29DD210080BA0E /* ViewController.m */; };
@@ -86,19 +86,19 @@
 		D615A8331F73FFE20091F746 /* hajzli_jedni.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = hajzli_jedni.m4a; sourceTree = "<group>"; };
 		D615A8341F73FFE20091F746 /* pockej_kamo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = pockej_kamo.m4a; sourceTree = "<group>"; };
 		D615A8551F7400850091F746 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		EF0725F81A4728BB003A6941 /* I Love My Job-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "I Love My Job-Prefix.pch"; path = "I Love My Job/I Love My Job-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		EF0725F81A4728BB003A6941 /* I Love My Job-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "I Love My Job-Prefix.pch"; sourceTree = "<group>"; };
 		EF21A91F1F731CFE00DE8197 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF5EB59D1F74293500CCBDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7482A21A294E310061C49F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EF7482A31A294E310061C49F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EF7482A71A2952670061C49F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		EF7482FC1A2965C30061C49F /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title@2x.png"; sourceTree = "<group>"; };
 		EFAC0AEA1A29098F00AEA729 /* I Love My Job.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Love My Job.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC0C1361A29DD210080BA0E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFC0C1371A29DD210080BA0E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EFC0C1381A29DD210080BA0E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EFC0C1391A29DD210080BA0E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EFC0C1411A29DD5D0080BA0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "I Love My Job/Info.plist"; sourceTree = SOURCE_ROOT; };
-		EFC0C1421A29DD5D0080BA0E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "I Love My Job/main.m"; sourceTree = SOURCE_ROOT; };
+		EFC0C1411A29DD5D0080BA0E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFC0C1421A29DD5D0080BA0E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +126,9 @@
 		EF7482A01A294E310061C49F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF7482A61A2952670061C49F /* Icons */,
 				EF7482A11A294E310061C49F /* Images */,
 				EF7482B01A295B2E0061C49F /* Sounds */,
+				EF5EB59D1F74293500CCBDBD /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -142,14 +142,6 @@
 				EF21A91F1F731CFE00DE8197 /* LaunchScreen.storyboard */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		EF7482A61A2952670061C49F /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				EF7482A71A2952670061C49F /* Icon@2x.png */,
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 		EF7482A91A295AB90061C49F /* Frameworks */ = {
@@ -246,7 +238,7 @@
 				EFC0C1411A29DD5D0080BA0E /* Info.plist */,
 				EFC0C1421A29DD5D0080BA0E /* main.m */,
 			);
-			path = "Supporting Files";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +307,6 @@
 				EF7482FD1A2965C30061C49F /* title@2x.png in Resources */,
 				D615A8381F73FFE20091F746 /* tuto_picu_potrebuju_utahnout.m4a in Resources */,
 				D615A8461F73FFE20091F746 /* ja_to_nejdu_delat.m4a in Resources */,
-				EF7482A81A2952670061C49F /* Icon@2x.png in Resources */,
 				D615A84E1F73FFE20091F746 /* zasrane_zamrdane.m4a in Resources */,
 				D615A8441F73FFE20091F746 /* neresitelny_problem_hosi.m4a in Resources */,
 				D615A8521F73FFE20091F746 /* pockej_kamo.m4a in Resources */,
@@ -337,6 +328,7 @@
 				D615A84C1F73FFE20091F746 /* kurva_uz.m4a in Resources */,
 				D615A8481F73FFE20091F746 /* nebudu_to_delat.m4a in Resources */,
 				D615A8371F73FFE20091F746 /* kurva_do_pice_to_neni_mozne.m4a in Resources */,
+				EF5EB59E1F74293500CCBDBD /* Assets.xcassets in Resources */,
 				D615A83D1F73FFE20091F746 /* nejvetsi_blbec_na_zemekouli.m4a in Resources */,
 				EF7482A41A294E310061C49F /* Default-568h@2x.png in Resources */,
 				D615A83A1F73FFE20091F746 /* kurva.m4a in Resources */,
