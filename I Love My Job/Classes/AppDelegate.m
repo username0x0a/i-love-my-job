@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Michi. All rights reserved.
 //
 
-#import <AudioToolbox/AudioToolbox.h>
 #import "AppDelegate.h"
 #import "ViewController.h"
 
@@ -24,9 +23,6 @@
 
 	[self.window setRootViewController:nc];
 	[self.window makeKeyAndVisible];
-
-	// Pre-initialize Audio service
-	AudioServicesPlaySystemSound(0);
 
 	return YES;
 }

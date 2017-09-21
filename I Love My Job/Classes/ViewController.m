@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 Michi. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "ViewController.h"
-#import "IDZAQAudioPlayer.h"
-#import "IDZOggVorbisFileDecoder.h"
 
 
 static NSDictionary *sounds = nil;
@@ -72,7 +71,7 @@ static NSDictionary *sounds = nil;
 @interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) IDZAQAudioPlayer *player;
+@property (nonatomic, strong) AVQueuePlayer *player;
 @property (atomic) CGFloat direction;
 
 @end
@@ -125,6 +124,9 @@ static NSDictionary *sounds = nil;
 	});
 
 	[super viewDidLoad];
+
+	_player = [AVQueuePlayer new];
+	[[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:nil];
 
 	self.title = @"I Love My Job";
 	self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title"]];
@@ -208,19 +210,15 @@ static NSDictionary *sounds = nil;
 
 - (void)playSoundAtIndex:(NSInteger)index
 {
-	if (_player) [_player stop];
+	if (_player) [_player pause];
 
-	NSError *error;
 	NSString *key = sounds.allKeys[index];
 	NSString *resourceName = sounds[key];
-	NSURL* oggUrl = [[NSBundle mainBundle] URLForResource:resourceName withExtension:@".ogg"];
-	NSAssert(oggUrl, @"URL is valid.");
-	IDZOggVorbisFileDecoder* decoder = [[IDZOggVorbisFileDecoder alloc] initWithContentsOfURL:oggUrl error:&error];
-#ifdef DEBUG
-	NSLog(@"Ogg Vorbis file duration is %g", decoder.duration);
-#endif
-	_player = [[IDZAQAudioPlayer alloc] initWithDecoder:decoder error:nil];
-	[_player prepareToPlay];
+	NSURL* soundURL = [[NSBundle mainBundle] URLForResource:resourceName withExtension:@".m4a"];
+	NSAssert(soundURL, @"URL is valid.");
+
+	[_player removeAllItems];
+	[_player insertItem:[AVPlayerItem playerItemWithURL:soundURL] afterItem:nil];
 	[_player play];
 }
 
