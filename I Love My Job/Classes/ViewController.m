@@ -13,7 +13,24 @@
 static NSDictionary<NSString *, NSString *> *sounds = nil;
 
 
-#pragma mark Grid cell
+#pragma mark - UIColor extension
+
+
+@implementation UIColor  (Utils)
+
++ (UIColor *)colorNamed:(NSString *)colorName value:(CGFloat)value
+{
+	if (@available(iOS 11.0, *)) {
+		return [UIColor colorNamed:colorName];
+	} else {
+		return [UIColor colorWithWhite:value alpha:1.0];
+	}
+}
+
+@end
+
+
+#pragma mark - Grid cell
 
 
 @interface GridCell : UICollectionViewCell
@@ -29,20 +46,20 @@ static NSDictionary<NSString *, NSString *> *sounds = nil;
 {
 	if (self = [super initWithFrame:frame])
 	{
-		self.layer.cornerRadius = 6;
+		self.layer.cornerRadius = 8;
 		self.layer.borderWidth = 0.5;
-		self.layer.borderColor = [UIColor colorWithWhite:0.836 alpha:1.000].CGColor;
+		self.layer.borderColor = [UIColor colorWithWhite:0.65 alpha:0.4].CGColor;
 		self.clipsToBounds = YES;
 		CGFloat margin = 6;
 		CGRect frame = CGRectInset(self.contentView.bounds, 2*margin, 2*margin);
 		_title = [[UILabel alloc] initWithFrame:frame];
 		_title.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		_title.font = [UIFont systemFontOfSize:15];
-		_title.textColor = [UIColor colorWithWhite:0.374 alpha:1.000];
+		_title.textColor = [UIColor colorNamed:@"cellText" value:0.374];
 		_title.textAlignment = NSTextAlignmentCenter;
 		_title.numberOfLines = 0;
 		[self.contentView addSubview:_title];
-		self.contentView.backgroundColor = [UIColor colorWithWhite:0.913 alpha:1.000];
+		self.contentView.backgroundColor = [UIColor colorNamed:@"cell" value:0.913];
 	}
 
 	return self;
@@ -133,11 +150,8 @@ static NSDictionary<NSString *, NSString *> *sounds = nil;
 	self.title = @"I Love My Job";
 	self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title"]];
 
-	[self.navigationController.navigationBar setTitleTextAttributes:@{
-		NSForegroundColorAttributeName: [UIColor colorWithWhite:0.402 alpha:1.000],
-	}];
-	self.view.backgroundColor = [UIColor colorWithWhite:0.988 alpha:1.000];
-	self.navigationController.navigationBar.barTintColor = [UIColor colorWithWhite:0.918 alpha:0.850];
+	self.view.backgroundColor = [UIColor colorNamed:@"background" value:0.988];
+	self.navigationController.navigationBar.barTintColor = [UIColor colorNamed:@"navbar" value:0.92];
 
 	_layout = [UICollectionViewFlowLayout new];
 	[self updateLayout];

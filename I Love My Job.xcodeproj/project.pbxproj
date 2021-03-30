@@ -45,7 +45,6 @@
 		EF5EB59E1F74293500CCBDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5EB59D1F74293500CCBDBD /* Assets.xcassets */; };
 		EF7482A41A294E310061C49F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A21A294E310061C49F /* Default-568h@2x.png */; };
 		EF7482A51A294E310061C49F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482A31A294E310061C49F /* Default@2x.png */; };
-		EF7482FD1A2965C30061C49F /* title@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7482FC1A2965C30061C49F /* title@2x.png */; };
 		EFC0C13A1A29DD210080BA0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1371A29DD210080BA0E /* AppDelegate.m */; };
 		EFC0C13B1A29DD210080BA0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1391A29DD210080BA0E /* ViewController.m */; };
 		EFC0C1441A29DD5D0080BA0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC0C1421A29DD5D0080BA0E /* main.m */; };
@@ -91,7 +90,6 @@
 		EF5EB59D1F74293500CCBDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF7482A21A294E310061C49F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		EF7482A31A294E310061C49F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		EF7482FC1A2965C30061C49F /* title@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "title@2x.png"; sourceTree = "<group>"; };
 		EFAC0AEA1A29098F00AEA729 /* I Love My Job.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Love My Job.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFC0C1361A29DD210080BA0E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFC0C1371A29DD210080BA0E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 			children = (
 				EF7482A21A294E310061C49F /* Default-568h@2x.png */,
 				EF7482A31A294E310061C49F /* Default@2x.png */,
-				EF7482FC1A2965C30061C49F /* title@2x.png */,
 				EF21A91F1F731CFE00DE8197 /* LaunchScreen.storyboard */,
 			);
 			path = Images;
@@ -304,7 +301,6 @@
 				D615A83E1F73FFE20091F746 /* tady_musis_vsechno_rozdelat.m4a in Resources */,
 				D615A8431F73FFE20091F746 /* to_sou_nervy_ty_pico.m4a in Resources */,
 				EF7482A51A294E310061C49F /* Default@2x.png in Resources */,
-				EF7482FD1A2965C30061C49F /* title@2x.png in Resources */,
 				D615A8381F73FFE20091F746 /* tuto_picu_potrebuju_utahnout.m4a in Resources */,
 				D615A8461F73FFE20091F746 /* ja_to_nejdu_delat.m4a in Resources */,
 				D615A84E1F73FFE20091F746 /* zasrane_zamrdane.m4a in Resources */,
