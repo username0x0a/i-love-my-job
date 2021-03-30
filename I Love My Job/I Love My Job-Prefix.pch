@@ -48,6 +48,19 @@
 // UI macros
 #define CGRectMakeFromOriginAndSize(origin, size) CGRectMake(origin.x, origin.y, size.width, size.height)
 
+// Math method macros
+#if CGFLOAT_IS_DOUBLE == 1
+#define CGCeil  ceil
+#define CGRound round
+#define CGFloor floor
+#define CGPow   pow
+#else
+#define CGCeil  ceilf
+#define CGRound roundf
+#define CGFloor floorf
+#define CGPow   powf
+#endif
+
 // Screen macros
 #define isRetina() ((int)[UIScreen mainScreen].scale > 1)
 #define isWidescreen() ((int)[[UIScreen mainScreen] bounds].size.height == 568)

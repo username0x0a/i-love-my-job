@@ -10,7 +10,7 @@
 #import "ViewController.h"
 
 
-static NSDictionary *sounds = nil;
+static NSDictionary<NSString *, NSString *> *sounds = nil;
 
 
 #pragma mark Grid cell
@@ -29,15 +29,14 @@ static NSDictionary *sounds = nil;
 {
 	if (self = [super initWithFrame:frame])
 	{
-		self.layer.cornerRadius = 5;
+		self.layer.cornerRadius = 6;
 		self.layer.borderWidth = 0.5;
 		self.layer.borderColor = [UIColor colorWithWhite:0.836 alpha:1.000].CGColor;
 		self.clipsToBounds = YES;
-		CGRect frame = self.contentView.bounds;
 		CGFloat margin = 6;
-		frame.origin.x += margin; frame.origin.y += margin;
-		frame.size.width -= 2*margin; frame.size.height -= 2*margin;
+		CGRect frame = CGRectInset(self.contentView.bounds, 2*margin, 2*margin);
 		_title = [[UILabel alloc] initWithFrame:frame];
+		_title.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 		_title.font = [UIFont systemFontOfSize:15];
 		_title.textColor = [UIColor colorWithWhite:0.374 alpha:1.000];
 		_title.textAlignment = NSTextAlignmentCenter;
@@ -52,7 +51,7 @@ static NSDictionary *sounds = nil;
 - (void)setHighlighted:(BOOL)highlighted
 {
 	CGFloat alpha = (highlighted) ? 0.5:1;
-	CGFloat scale = (highlighted) ? 0.9:1;
+	CGFloat scale = (highlighted) ? 0.925:1;
 	NSTimeInterval duration = (highlighted) ? .3:.5;
 
 	[UIView animateWithDuration:duration delay:0
@@ -68,8 +67,11 @@ static NSDictionary *sounds = nil;
 #pragma mark - View controller
 
 
-@interface ViewController () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface ViewController () <UICollectionViewDelegate,
+                              UICollectionViewDataSource,
+                              UICollectionViewDelegateFlowLayout>
 
+@property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) AVQueuePlayer *player;
 @property (atomic) CGFloat direction;
@@ -137,14 +139,11 @@ static NSDictionary *sounds = nil;
 	self.view.backgroundColor = [UIColor colorWithWhite:0.988 alpha:1.000];
 	self.navigationController.navigationBar.barTintColor = [UIColor colorWithWhite:0.918 alpha:0.850];
 
-	UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-	layout.itemSize = CGSizeMake(96, 96);
-	layout.minimumInteritemSpacing = 8;
-	layout.minimumLineSpacing = 8;
-	layout.sectionInset = UIEdgeInsetsMake(8,8,8,8);
-	layout.headerReferenceSize = CGSizeZero;
+	_layout = [UICollectionViewFlowLayout new];
+	[self updateLayout];
 
-	_collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+	_collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:_layout];
+	_collectionView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 	_collectionView.backgroundColor = [UIColor clearColor];
 	[_collectionView registerClass:[GridCell class] forCellWithReuseIdentifier:@"Cell"];
 	_collectionView.delegate = self;
@@ -155,6 +154,28 @@ static NSDictionary *sounds = nil;
 - (void)viewWillAppear:(BOOL)animated
 {
 	[_collectionView reloadData];
+}
+
+- (void)viewDidLayoutSubviews
+{
+	[super viewDidLayoutSubviews];
+	[self updateLayout];
+}
+
+- (void)updateLayout
+{
+	CGFloat width = CGRectGetWidth(_collectionView.bounds);
+	CGFloat itemsPerLine = (width > 900) ? 6 : (width > 512) ? 5 : 3;
+	width -= 2*8 + (itemsPerLine-1) * 8;
+	width = CGFloor(width / itemsPerLine);
+
+	_layout.itemSize = CGSizeMake(width, width);
+	_layout.minimumInteritemSpacing = 8;
+	_layout.minimumLineSpacing = 8;
+	_layout.sectionInset = UIEdgeInsetsMake(8, 8, 8, 8);
+	_layout.headerReferenceSize = CGSizeZero;
+
+	[_layout invalidateLayout];
 }
 
 
@@ -170,20 +191,9 @@ static NSDictionary *sounds = nil;
 	lastOffset = scrollView.contentOffset.y;
 }
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
-{
-	return 1;
-}
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
 	return sounds.count;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-	CGFloat size = (self.view.frame.size.width - 4*8) / 3;
-	return CGSizeMake(size, size);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -214,8 +224,8 @@ static NSDictionary *sounds = nil;
 
 	NSString *key = sounds.allKeys[index];
 	NSString *resourceName = sounds[key];
-	NSURL* soundURL = [[NSBundle mainBundle] URLForResource:resourceName withExtension:@".m4a"];
-	NSAssert(soundURL, @"URL is valid.");
+	NSURL *soundURL = [[NSBundle mainBundle] URLForResource:resourceName withExtension:@".m4a"];
+	NSAssert(soundURL, @"URL is invalid");
 
 	[_player removeAllItems];
 	[_player insertItem:[AVPlayerItem playerItemWithURL:soundURL] afterItem:nil];
